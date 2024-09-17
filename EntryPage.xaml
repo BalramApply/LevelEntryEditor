@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LevelEntryEditor.EntryPage"
+             Title="Entry">
+    
+    <VerticalStackLayout Spacing="25" Margin="20">
+        <Label 
+            Text="ENTRY" FontSize="Title"
+            VerticalOptions="Center" FontFamily="Arial Black"
+            HorizontalOptions="Center" TextColor="#440099"/>
+
+        <HorizontalStackLayout Spacing="15">
+            <Label Text="Enter name: " FontSize="Caption"
+                   VerticalTextAlignment="Center"/>
+
+            <Entry x:Name="entryName" HeightRequest="50"
+                   WidthRequest="200" FontSize="Medium"
+                   TextColor="red" FontAttributes="Bold"
+                   Focused="Highlight" Unfocused="Unhighlight"/>
+        </HorizontalStackLayout>
+
+        <Entry x:Name="entryName2" HeightRequest="50" Placeholder="Enter you name"
+       WidthRequest="200" FontSize="24" BackgroundColor="LightYellow" ClearButtonVisibility="WhileEditing"
+       TextColor="Green" FontFamily="Arial Narrow Bold Italic"
+       Focused="Highlight" Unfocused="Unhighlight" HorizontalOptions="End" Completed="OnCompleted"/>
+
+        <Entry HeightRequest="50" Placeholder="Age"
+       WidthRequest="100" FontSize="Large" BackgroundColor="LightYellow"
+       TextColor="Blue" FontAttributes="Bold" HorizontalTextAlignment="End"
+        Keyboard="Numeric"/>
+
+        <VerticalStackLayout HorizontalOptions="Center">
+            <Entry x:Name="entryPassword" HeightRequest="55" WidthRequest="100"
+                   FontSize="24" TextColor="Navy" BackgroundColor="LightCyan"
+                   Placeholder="Enter password" IsPassword="True"
+                   HorizontalOptions="Center" TextChanged="TextPassword"/>
+            <Label Text="8 character minimum, includes uppercase, lowercase and numbers"
+                   FontSize="Micro" MaxLines="2" WidthRequest="300"
+                   HorizontalTextAlignment="Center"/>
+            <Label x:Name="lblValid" FontSize="Medium" TextColor="red"
+                   Text="Password is invalid" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

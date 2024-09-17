@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LevelEntryEditor.EditorPage"
+             Title="Editor">
+    <VerticalStackLayout Spacing="25" Margin="20">
+        <Label 
+            Text="Editor" FontSize="Title"
+            VerticalOptions="Center" FontFamily="Arial Black"
+            HorizontalOptions="Center" TextColor="#440099"/>
+
+        <VerticalStackLayout HorizontalOptions="Center">
+        <Editor x:Name="editorQuestion" BackgroundColor="LightYellow"
+                WidthRequest="250" HeightRequest="120" Placeholder="Enter your question here"
+                FontSize="Small" VerticalTextAlignment="Start" TextChanged="UpdateLength"/>
+            <Label x:Name="lblLength" Text="Length: 0 Characters" FontSize="Caption"/>
+        </VerticalStackLayout>
+
+                <Editor x:Name="editorQuestion2" WidthRequest="250" HeightRequest="120"
+                    Placeholder="Enter your question here!" BackgroundColor="LightCyan"
+                    FontSize="Small" VerticalTextAlignment="Start" Rotation="20" Margin="0, 30, 0, 0"/>
+        </VerticalStackLayout>
+</ContentPage>

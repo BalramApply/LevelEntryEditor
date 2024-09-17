@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LevelEntryEditor.LabelPage"
+             Title="Label">
+    <ScrollView>
+
+        <VerticalStackLayout Margin="20" Spacing="15">
+
+            <Label
+                Text="LABEL" FontSize="Title"
+                VerticalOptions="Center" FontFamily="Arial Black"
+                HorizontalOptions="Center" TextColor="#440099"/>
+
+            <Label
+    Text="Phoenix, Arizone" FontSize="Medium" HeightRequest="40" WidthRequest="200"
+    VerticalOptions="Center" FontFamily="Arial Black" BackgroundColor="LightBlue"
+    HorizontalOptions="Center" TextColor="DarkBlue" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+            <Label
+Text="The Grand Canyon" FontSize="Body" HeightRequest="40" WidthRequest="200"
+VerticalOptions="Start" FontFamily="Apple Chancery" BackgroundColor="LightBlue"
+HorizontalOptions="Start" TextColor="DarkBlue" FontAttributes="Italic" HorizontalTextAlignment="Start"/>
+
+            <Label
+Text="This Text Cnsist of &#10; not one, not two,&#10; but three lines of text." FontSize="Micro" HeightRequest="50" WidthRequest="200"
+BackgroundColor="LightBlue" MaxLines="3" HorizontalTextAlignment="End"
+HorizontalOptions="End" TextColor="DarkBlue" FontAttributes="Italic" VerticalTextAlignment="End"/>
+
+            <Label
+    Text="ARIZONA" FontSize="32" CharacterSpacing="10" Rotation="-20"
+    FontFamily="Arial Black" HeightRequest="100"
+    HorizontalOptions="Center" TextColor="Maroon" HorizontalTextAlignment="Center"/>
+
+            <Label HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Arizona" TextColor="Maroon" FontSize="40" FontAttributes="Bold"/>
+                        <Span Text="is Know as The" FontSize="12"/>
+                        <Span Text="Grand Canyon State." FontSize="24" TextColor="Purple" FontFamily="Arial Black"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label x:Name="lblGettysburg1" FontSize="Small" LineBreakMode="TailTruncation" WidthRequest="350" BackgroundColor="LightSteelBlue"/>
+            <Label x:Name="lblGettysburg2" FontSize="Small" LineBreakMode="TailTruncation" WidthRequest="350" BackgroundColor="LightSteelBlue"/>
+            <Label x:Name="lblGettysburg3" FontSize="Small" LineBreakMode="TailTruncation" WidthRequest="350" BackgroundColor="LightSteelBlue"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

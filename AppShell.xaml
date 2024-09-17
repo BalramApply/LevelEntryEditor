@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="LevelEntryEditor.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:LevelEntryEditor"
+    Shell.FlyoutBehavior="Flyout"
+    Title="LevelEntryEditor">
+
+    <ShellContent
+        Title="Label"
+        ContentTemplate="{DataTemplate local:LabelPage}"
+        Route="LabelPage" />
+
+    <ShellContent
+    Title="Entry"
+    ContentTemplate="{DataTemplate local:EntryPage}"
+    Route="EntryPage" />
+
+    <ShellContent
+Title="Editor"
+ContentTemplate="{DataTemplate local:EditorPage}"
+Route="EditorPage" />
+</Shell>
