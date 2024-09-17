@@ -13,9 +13,8 @@
 
 ## Technologies Used
 
-- **Language**: [Programming Language (e.g., C#, JavaScript)]
-- **Framework**: [Framework (e.g., .NET MAUI, React.js)]
-- **Database**: [Database (e.g., SQLite, MongoDB)]
+- **Language**: [Programming Language (e.g., C#)]
+- **Framework**: [Framework (e.g., .NET MAUI)]
 - **Version Control**: Git, GitHub
 - **Tools**: Visual Studio 2022, GitHub
 
